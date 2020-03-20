@@ -43,7 +43,7 @@ public class ReactDatabaseSupplier extends SQLiteOpenHelper {
 
   private Context mContext;
   private @Nullable SQLiteDatabase mDb;
-  private long mMaximumDatabaseSize =  BuildConfig.AsyncStorage_db_size * 1024L * 1024L;
+  private long mMaximumDatabaseSize = 100L * 1024L * 1024L;
 
   private ReactDatabaseSupplier(Context context) {
     super(context, DATABASE_NAME, null, DATABASE_VERSION);
